@@ -1,0 +1,50 @@
+/*
+Regras:
+    -> se tiverem dois atributos em conflito, será considerado o último.
+
+sintaxe:
+    tags:
+        body {
+            atributos
+        }
+    classes:
+        .nomeClasse {
+            atributos
+        }
+    ids:
+        #NomeId {
+            atributos
+        }
+        
+*/
+
+/* selector universal -> modifica todas as tags*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*O rem se baseia nos valores do root*/
+  /* 62.5% -> 10px  ; 100% -> 16px*/
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh; /* para considerar toda a "altura" da página*/
+  color: white;
+}
+
+body,
+input,
+button,
+textarea {
+  /*
+    font-weight: 400; // peso da fonte; ex: 700 ≃ bold 
+    font-size: 18px; -> 1.8 rem
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;
+    */
+  font: 400 1.8rem/1 "Nunito", sans-serif;
+}
