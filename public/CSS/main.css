@@ -34,6 +34,7 @@ sintaxe:
 body {
   height: 100vh; /* para considerar toda a "altura" da página*/
   color: white;
+  background: #EBF2F5;
 }
 
 body,
